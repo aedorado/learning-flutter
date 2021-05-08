@@ -5,11 +5,11 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        final snackBar = SnackBar(
-          content: Text("Hare Krishna!"),
-          backgroundColor: Colors.amberAccent,
-        );
-        Scaffold.of(context).showSnackBar(snackBar);
+        // final snackBar = SnackBar(
+        //   content: Text("Hare Krishna!"),
+        //   backgroundColor: Colors.amberAccent,
+        // );
+        // Scaffold.of(context).showSnackBar(snackBar);
       },
       child: Container(
         padding: EdgeInsets.all(10.0),
