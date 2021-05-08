@@ -9,7 +9,7 @@ class CustomButton extends StatelessWidget {
           content: Text("Hare Krishna!"),
           backgroundColor: Colors.amberAccent,
         );
-        Scaffold.of(context).showSnackBar(snackBar);
+        // Scaffold.of(context).showSnackBar(snackBar);
       },
       child: Container(
         padding: EdgeInsets.all(10.0),
