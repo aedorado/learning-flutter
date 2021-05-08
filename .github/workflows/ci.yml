@@ -75,6 +75,8 @@ jobs:
         with:
           artifacts: "build/app/outputs/apk/debug/*.apk"
           token: ${{ secrets.TOKEN }}
+          commit: main
+          tag: v1.0.${{ github.run_number }}
 
 ##The name of your workflow.
 #name:  Test, build and deploy
