@@ -23,8 +23,8 @@ jobs:
           channel: "stable"
       - name: Install pub Dependencies
         run: flutter pub get
-      - name: Run Tests
-        run: flutter test
+#      - name: Run Tests
+#        run: flutter test
       - name: Build Android App
         run: flutter build apk --split-per-abi
       - name: Build iOS App
@@ -36,11 +36,11 @@ jobs:
           ln -s ../Runner.app
           cd ..
           zip -r app.ipa Payload
-      - name: Build Web App
-        run: |
-          flutter build web
-          cd build/web
-          zip -r web-app.zip .
+#      - name: Build Web App
+#        run: |
+#          flutter build web
+#          cd build/web
+#          zip -r web-app.zip .
       - name: Release Apps
         uses: ncipollo/release-action@v1
         with:
